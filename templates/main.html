@@ -1,10 +1,13 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>main</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="bazunaka">
+    <title>bazMaster - главное приложение</title>
     <link href="{% static 'css/bazmasterapp/index.css' %}" rel="stylesheet">
     <link href="{% static 'css/bootstrap-grid.css' %}" rel="stylesheet">
     <link href="{% static 'css/bootstrap-grid.rtl.css' %}" rel="stylesheet">
@@ -13,31 +16,32 @@
     <link href="{% static 'css/bootstrap.rtl.css' %}" rel="stylesheet">
     <link href="{% static 'css/bootstrap-utilities.css' %}" rel="stylesheet">
     <link href="{% static 'fonts/fontawesome-all.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
     <script defer src="{% static 'js/bootstrap.bundle.js' %}"></script>
-    <link rel="stylesheet" href="../static/css/bootstrap.css">
-    <link rel="stylesheet" href="../static/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="../static/css/bootstrap-grid.rtl.css">
-    <link rel="stylesheet" href="../static/css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="../static/css/bootstrap.rtl.css">
-    <link rel="stylesheet" href="../static/css/bootstrap-utilities.css">
-    <link rel="stylesheet" href="../static/css/bazmasterapp/index.css">
-    <link rel="stylesheet" href="../static/fonts/fontawesome-all.min.css">
-    <script rel="stylesheet" href="../js/bootstrap.bundle.js"></script>
 </head>
 
 <body class="sb-nav-fixed">
-    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark"><a class="navbar-brand ps-3" href="#">bazMaster</a><button class="btn btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" type="button"><i class="fas fa-bars text-white"></i></button>
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand ps-3" href="main.html">bazMaster</a>
+        <button class="btn btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!">
+            <i class="fas fa-bars"></i>
+        </button>
         <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-            <div class="input-group"><input class="form-control" type="text" placeholder="Искать..." aria-label="Искать..." aria-describedby="btnNavbarSearch"><button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button></div>
+            <div class="input-group">
+                <input class="form-control" type="text" placeholder="Искать..." aria-label="Искать..." aria-describedby="btnNavbarSearch">
+                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+            </div>
         </form>
         <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
-            <li class="nav-item dropdown"><a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+            <li class="nav-item dropdown">
+                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-user fa-fw"></i></a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <li>Item 1<a class="dropdown-item" href="#">Link</a></li>
-                    <li>Item 2<a class="dropdown-item" href="#">Link</a></li>
-                    <li>Item 3<a class="dropdown-item" href="#">Link</a></li>
-                    <li>Item 4<hr class="dropdown-divider"></li>
-                    <li>List Item<a class="dropdown-item" href="#">Link</a></li>
+                    <li><a class="dropdown-item" href="#">Настройки</a></li>
+                    <li><a class="dropdown-item" href="#">Активность</a></li>
+                    <li><a class="dropdown-item" href="#">Что-то</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Выход</a></li>
                 </ul>
             </li>
         </ul>
@@ -46,17 +50,64 @@
         <div id="layoutSidenav_nav">
             <nav id="sidenavAccordion" class="sb-sidenav accordion sb-sidenav-dark">
                 <div class="sb-sidenav-menu">
-                    <div class="nav"><div class="sb-sidenav-menu-heading">Ядро</div>
-<a class="nav-link"><div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>Панель инструментов</a><div class="sb-sidenav-menu-heading">Интерфейс</div>
-<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts"><div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>Слои <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div></a>
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading">Ядро</div>
+                        <a class="nav-link" href="main.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Информационная панель
+                        </a>
+                        <div class="sb-sidenav-menu-heading">Интерфейс</div>
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Макеты
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
                         <div id="collapseLayouts" class="collapse" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="#">Link</a><a class="nav-link" href="#">Link</a></nav>
-                        </div><a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">Link<div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="#">Статическая навигация</a>
+                                <a class="nav-link" href="#">Light Sidenav</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                            <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                            Страницы
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
                         <div id="collapsePages" class="collapse" arai-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
-                            <nav id="sidenavAccordionPages" class="sb-sidenav-menu-nested nav accordion"><a class="nav-link collapsed" href="#">Link</a></nav>
+                            <nav id="sidenavAccordionPages" class="sb-sidenav-menu-nested nav accordion">
+                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                Аутентификация
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                </a>
+                                <div id="pagesCollapseAuth" class="collapse" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                    <nav class="sb-sidenav-menu-nested nav">
+                                        <a class="nav-link" href="#">Вход</a>
+                                        <a class="nav-link" href="#">Регистрация</a>
+                                        <a class="nav-link" href="#">Восстановление пароля</a>
+                                    </nav>
+                                </div>
+                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                    Ошибки
+                                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                </a>
+                                <div id="pagesCollapseError" class="collapse" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                    <nav class="sb-sidenav-menu-nested nav">
+                                        <a class="nav-link" href="#">401</a>
+                                        <a class="nav-link" href="#">404</a>
+                                        <a class="nav-link" href="#">500</a>
+                                    </nav>
+                                </div>
+                            </nav>
                         </div>
+                        <div class="sb-sidenav-menu-heading">Дополнительно</div>
+                        <a class="nav-link" href="#">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Графики
+                        </a>
+                        <a class="nav-link" href="#">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Таблицы
+                        </a>
                     </div>
                 </div>
             </nav>
