@@ -8,7 +8,7 @@ def index(request):
 
 
 def main(request):
-    return render(request, 'main.html')
+    return render(request, 'main.html', context={'summary': 1000})
 
 
 def auth(request):
