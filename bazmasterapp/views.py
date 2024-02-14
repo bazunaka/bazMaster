@@ -9,6 +9,7 @@ def index(request):
 
 def main(request):
     return render(request, 'main.html', context={'summary': 1000})
+    # return render(request, 'test.html')
 
 
 def auth(request):
