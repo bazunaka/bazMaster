@@ -12,5 +12,5 @@ def main(request):
     # return render(request, 'test.html')
 
 
-def auth(request):
-    return render(request, 'auth.html')
+def login(request):
+    return render(request, 'login.html')
