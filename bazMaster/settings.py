@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'bazMaster.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'bazMaster',
+        'USER': 'postgres',
+        'PASSWORD': 'bazunaka!',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
