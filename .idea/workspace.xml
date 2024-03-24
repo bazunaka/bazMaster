@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbb3b3e2-9057-4efb-9087-6cb7d18ccba4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bazMaster/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/bazMaster/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,6 +231,7 @@
       <workItem from="1710583779291" duration="29000" />
       <workItem from="1711301917226" duration="91000" />
       <workItem from="1711302052250" duration="522000" />
+      <workItem from="1711303779585" duration="210000" />
     </task>
     <servers />
   </component>
