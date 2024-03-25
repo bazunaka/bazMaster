@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbb3b3e2-9057-4efb-9087-6cb7d18ccba4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/bazMaster/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/bazMaster/settings.py" afterDir="false" />
+    <list default="true" id="bbb3b3e2-9057-4efb-9087-6cb7d18ccba4" name="Changes" comment="first migrate">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bazmasterapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/bazmasterapp/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +233,17 @@
       <workItem from="1711301917226" duration="91000" />
       <workItem from="1711302052250" duration="522000" />
       <workItem from="1711303779585" duration="210000" />
+      <workItem from="1711303998380" duration="93000" />
+      <workItem from="1711382405762" duration="2402000" />
     </task>
+    <task id="LOCAL-00001" summary="first migrate">
+      <created>1711304079186</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711304079186</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,5 +259,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first migrate" />
+    <option name="LAST_COMMIT_MESSAGE" value="first migrate" />
   </component>
 </project>
