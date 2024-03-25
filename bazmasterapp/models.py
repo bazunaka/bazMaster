@@ -17,3 +17,17 @@ class BankAccounts(models.Model):
     create_date = models.DateField(verbose_name="Дата создания")
     close_date = models.DateField(verbose_name="Дата закрытия")
     isActive = models.BooleanField(verbose_name="Активен")
+
+
+class TypesCategories(models.Model):
+    type_name = models.CharField(max_length=100, verbose_name="Название типа категории", unique=True)
+
+
+class Categories(models.Model):
+    id_type = models.ForeignKey(TypesCategories, on_delete=models.CASCADE, verbose_name="Название типа категории")
+    name_category = models.CharField(max_length=100, verbose_name="Название категории")
+
+
+class SubCategories(models.Model):
+    id_cat = models.ForeignKey(Categories, on_delete=models.CASCADE, verbose_name="Название категории")
+    name_sub_cat = models.CharField(max_length=100, verbose_name="Название подкатегории")
