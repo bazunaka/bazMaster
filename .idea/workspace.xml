@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbb3b3e2-9057-4efb-9087-6cb7d18ccba4" name="Changes" comment="add new coonection to postgres on Docker">
+    <list default="true" id="bbb3b3e2-9057-4efb-9087-6cb7d18ccba4" name="Changes" comment="add routing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bazmasterapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bazmasterapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bazmasterapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bazmasterapp/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -299,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711532925316</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add routing">
+      <option name="closed" value="true" />
+      <created>1711616654909</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711616654909</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,6 +330,7 @@
     <MESSAGE value="add new models" />
     <MESSAGE value="add new templates and coonection to postgres on MacOS" />
     <MESSAGE value="add new coonection to postgres on Docker" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new coonection to postgres on Docker" />
+    <MESSAGE value="add routing" />
+    <option name="LAST_COMMIT_MESSAGE" value="add routing" />
   </component>
 </project>
