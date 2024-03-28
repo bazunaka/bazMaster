@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbb3b3e2-9057-4efb-9087-6cb7d18ccba4" name="Changes" comment="refactor register.html" />
+    <list default="true" id="bbb3b3e2-9057-4efb-9087-6cb7d18ccba4" name="Changes" comment="refactor register.html">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -264,6 +266,7 @@
       <workItem from="1711525349780" duration="939000" />
       <workItem from="1711527376286" duration="359000" />
       <workItem from="1711527753544" duration="5690000" />
+      <workItem from="1711614471709" duration="318000" />
     </task>
     <task id="LOCAL-00001" summary="first migrate">
       <created>1711304079186</created>
@@ -303,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711539433632</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="refactor register.html">
+      <option name="closed" value="true" />
+      <created>1711614761943</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711614761943</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
